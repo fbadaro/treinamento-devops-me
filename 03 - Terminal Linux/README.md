@@ -4,8 +4,6 @@
 - [Documentação dos comandos.](https://github.com/fbadaro/101-linux-commands-ebook)
 - [A arte da linha de comando.](https://github.com/jlevy/the-art-of-command-line/blob/master/README-pt.md)
 
-<br>
-
 ### Permissão de Arquivos
 ---
 Como o Linux é um sistema operacional multiusuário, é necessário fornecer segurança para impedir que as pessoas acessem os arquivos confidenciais umas das outras. Assim, o Linux divide a autorização em 2 níveis.
@@ -20,8 +18,6 @@ Como o Linux é um sistema operacional multiusuário, é necessário fornecer se
 - Erite: Dá a você autoridade para modificar o conteúdo de um arquivo e adicionar, remover e renomear arquivos armazenados no diretório.
 - Execute: Dá a você autoridade para executar o programa em Unix/Linux.
 
-<br>
-
 As permissões são indicadas com os caracteres abaixo:
 
 ```
@@ -33,7 +29,6 @@ As permissões são indicadas com os caracteres abaixo:
 
   \- = no permission
 ```
-<br>
 
 #### Alterando as permissões
 O comando `chmod` é usado para alterar o modo de acesso de um arquivo. Este comando é usado para definir permissões (ler, escrever, executar) em um arquivo/diretório para o proprietário, grupo e outros grupos.
@@ -44,7 +39,6 @@ chmod [reference][operator][mode] file...
 Example
 chmod ugo-rwx test.txt
 ```
-<br>
 
 Existem 2 maneiras de usar este comando,
 
@@ -66,7 +60,7 @@ Vamos atualizar as permissões no modo absoluto com um exemplo abaixo.
 ```
 chmode 764 test.txt
 ```
-<br>
+---
 
 2 - Modo simbólico: O modo simbólico, você pode modificar as permissões de um proprietário específico ao contrário do modo absoluto.
 

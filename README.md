@@ -8,8 +8,6 @@
 4. https://www.schoolofnet.com/curso/sistemas-operacionais/terminal/terminal-no-linux-pt02/
 5. https://www.schoolofnet.com/curso/git/controle-de-versao/git-e-github/
 
-<br>
-
 ## Anotações da Trilha de Introdução
 
 - [Vagrant](01%20-%20Vagrant/README.md)
