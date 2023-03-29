@@ -16,7 +16,9 @@ O container que contém a aplicação tem as bibliotecas, dependências e arquiv
 
 Esse foi um exemplo simples. No entanto, é possível usar os containers [Linux](https://www.redhat.com/pt-br/topics/linux/what-is-linux) em diversas situações problemáticas das mais variadas maneiras, sempre que for necessário obter o máximo de portabilidade, configurabilidade e isolamento. Com containers Linux, seu negócio desenvolve mais rapidamente e atende às necessidades empresariais conforme elas surgem. Em alguns casos, como a [transmissão de dados em tempo real com o Apache Kafka](https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka), os containers são essenciais, pois são a única maneira de dar a escalabilidade que a aplicação precisa. Seja qual for o tipo de infraestrutura, on-premise, na [nuvem](https://www.redhat.com/pt-br/topics/cloud) ou híbrida, os containers atendem a qualquer demanda. E vale lembrar, escolher a plataforma de container ideal é tão importante quanto os próprios containers.
 
-![O que é um container](assets\what-is-a-container.png)
+![O que é um container](https://github.com/fbadaro/treinamento-devops-me/blob/main/00%20-%20Bonus/assets/what-is-a-container.png)
+
+
 
 ## Qual é a diferença entre virtualização e os containers Linux?
 
@@ -25,9 +27,7 @@ As duas tecnologias são distintas porém complementares. Veja uma maneira fáci
 - Com a [virtualização](https://www.redhat.com/pt-br/topics/virtualization), é possível executar sistemas operacionais (Windows ou Linux) simultaneamente em um único sistema de hardware.
 - Os containers compartilham o mesmo kernel do sistema operacional e isolam os processos da aplicação do restante do sistema. Por exemplo, os sistemas ARM Linux executam containers ARM Linux, os sistemas x86 Linux executam containers x86 Linux e os sistemas x86 Windows executam containers x86 Windows. Os containers Linux são extremamente portáteis, mas devem ser compatíveis com o sistema subjacente.
 
-![virtualização x containers](assets\virtualization-vs-containers.png)
-
-
+![virtualização x containers](https://github.com/fbadaro/treinamento-devops-me/blob/main/00%20-%20Bonus/assets/virtualization-vs-containers.png)
 
 O que isso significa? Para começar, a virtualização usa um hipervisor para emular o hardware, o que permite executar vários sistemas operacionais simultaneamente. Essa não é uma solução tão leve quanto o uso de containers. Quando a capacidade e os recursos são limitados, é necessário usar aplicações leves que possam ser implantadas densamente. Os containers Linux são executados de maneira nativa no sistema operacional, compartilhando-o com todos os outros containers. Assim, as aplicações e os serviços permanecem leves e são executados em paralelo com agilidade.
 
@@ -89,7 +89,7 @@ Essas ferramentas baseadas nos containers Linux (o que faz com que o Docker seja
 
 Não, a tecnologia Docker foi desenvolvida inicialmente com base na tecnologia [LXC](https://linuxcontainers.org/), que a maioria das pessoas associa aos containers Linux "tradicionais". No entanto, desde então, essa tecnologia tornou-se independente. O LXC era útil como uma [virtualização](https://www.redhat.com/pt-br/topics/virtualization) leve, mas não oferecia uma boa experiência para usuários e desenvolvedores. A tecnologia Docker oferece mais do que a habilidade de executar containers: ela também facilita o processo de criação e construção de containers, o envio e o controle de versão de imagens, dentre outras coisas.
 
-![Linux containers vs docker](assets\traditional-linux-containers-vs-docker_0.png)
+![Linux containers vs docker](https://github.com/fbadaro/treinamento-devops-me/blob/main/00%20-%20Bonus/assets/traditional-linux-containers-vs-docker_0.png)
 
 Os containers Linux tradicionais usam um sistema init capaz de gerenciar vários processos. Isso significa que aplicações inteiras são executadas como uma. A tecnologia Docker incentiva que as aplicações sejam segregadas em processos separados e oferece as ferramentas para fazer isso. Essa abordagem granular tem algumas vantagens.
 
@@ -162,7 +162,7 @@ Aplicações de produção abrangem múltiplos containers. Eles devem ser implan
 
 Também é necessário integrar o Kubernetes com os serviços de rede, [armazenamento](https://www.redhat.com/pt-br/topics/data-storage), segurança, telemetria e outros para oferecer uma infraestrutura de containers global.
 
-![diagrama Kubernetes](assets\kubernetes-diagram-902x416.png)
+![diagrama Kubernetes](https://github.com/fbadaro/treinamento-devops-me/blob/main/00%20-%20Bonus/assets/kubernetes-diagram-902x416.png)
 
 No entanto, isso obviamente depende do uso que cada empresa faz dos containers em seus próprios ambientes. Uma aplicação rudimentar dos containers Linux os trata como máquinas virtuais rápidas e eficientes. Quando escalado para um ambiente de produção e diversas aplicações, fica claro que é necessário ter vários containers alocados funcionando em conjunto para disponibilizar serviços individuais. Isso multiplica substancialmente o número de containers no ambiente. À medida que eles se acumulam, a complexidade também aumenta.
 
@@ -229,7 +229,7 @@ Para isso, existe o [Red Hat OpenShift](https://www.redhat.com/pt-br/technologie
 
 Além disso, a maior vantagem dessa solução é que essa plataforma foi desenvolvida e conta com o suporte da Red Hat, a empresa líder global em tecnologia open source.
 
-![diagrama do Kubernetes na infraestrutura](assets\kubernetes-diagram-2-824x437.png)
+![diagrama do Kubernetes na infraestrutura](https://github.com/fbadaro/treinamento-devops-me/blob/main/00%20-%20Bonus/assets/kubernetes-diagram-2-824x437.png)
 
 O Kubernetes é executado em um sistema operacional (por exemplo, no [Red Hat Enterprise Linux Container Host](https://www.redhat.com/pt-br/technologies/linux-platforms/old-enterprise-linux)) e interage com pods de containers executados em nós. A máquina mestre do Kubernetes aceita os comandos de um administrador (ou equipe de DevOps) e retransmite essas instruções aos nós subservientes. Essa retransmissão é realizada em conjunto com vários serviços para automaticamente decidir qual nó é o mais adequado para a tarefa. Depois, são alocados os recursos e atribuídos os pods do nó para cumprir a tarefa solicitada.
 
