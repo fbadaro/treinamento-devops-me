@@ -28,3 +28,17 @@
 ## Anotações da Trilha Delivery Contínuo
 
 - [Docker & O que são containers Linux](00%20-%20Bonus/O%20que%20e%20um%20container%20Linux.md)
+
+## Trilha 3 - Kubernetes
+
+1. https://www.schoolofnet.com/curso/containers/kubernetes/iniciando-com-kubernetes-rev-2/	
+2. https://www.schoolofnet.com/curso/containers/kubernetes/kubernetes-configmaps-e-secrets/	
+3. https://www.schoolofnet.com/curso/containers/kubernetes/kubernetes-avancando-com-servicos/	
+4. https://www.schoolofnet.com/curso/containers/kubernetes/kubernetes-deployments-rolling-update-e-horizontal/	
+5. https://www.schoolofnet.com/curso/containers/kubernetes/avancando-com-kubernetes/	
+6. https://www.schoolofnet.com/curso/containers/kubernetes/empacotando-aplicacoes-kubernetes-com-helm/	
+7. https://www.schoolofnet.com/canal-direto-ao-ponto/cronjobs-no-kubernetes/	
+8. https://www.schoolofnet.com/canal-direto-ao-ponto/instalando-aplicacoes-no-kubernetes-com-helm-3/	
+9. https://www.schoolofnet.com/curso/containers/kubernetes/kubernetes-na-pratica/	
+10. https://keda.sh/docs/2.8/concepts/	
+11. https://argo-cd.readthedocs.io/en/stable/
